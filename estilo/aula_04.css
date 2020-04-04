@@ -4,5 +4,8 @@ h1{
     color: crimson;
     font-size: 15pt;
     font-family: cursive;
+    border: 1px solid black;
+    padding: 5px;
+    width: 10%;
 }
 
