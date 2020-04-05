@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+h1{
+    border: groove 2px black;
+    margin-left: 38%;
+    width:18%;
+    color: orange;
+    font-family:cursive;
+    font-size:16pt;
+    padding: 0.5%;
+    text-align: center;
+    transition: 1s;
+}
+h1:hover{
+         background: rgba(0, 0, 0, 3);
+        color: white;
+}
+P{
+    font-family: cursive;
+    font-size: 14pt;
+    margin-left: 13%;
+    
+}
+#tv{
+    margin-left: 36%;
+}
+#interface{
+            border: solid 2px black;
+            width:45%;
+            margin-left: 21%;
+}
+
