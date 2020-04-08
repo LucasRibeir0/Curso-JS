@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <style>
+        body{background-color: black;
+        color: white;
+        font-size: 18pt;
+        font-family:cursive;
+        }
+    </style>
+    <h1>Iniciando estudos com DOM</h1>
+    <P>Aqui vai o resultado</P>
+     <p>Esse é o segundo parágrafo</p>
+    <div id="mensagem">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+      var p1 = window.document.getElementsByTagName('p')[0]  
+      window.document.write('No parágrafo zero está assim: ' +p1.innerText)
+      p1.style.color = 'red'
+      corpo.style.background = 'cecece' 
+      var d = window.document.getElementById('mensagem')
+      d.style.color = 'green'
+      d.innerText = 'Nova mensagem feita com ID e innerText'
+    </script>
+    
+</body>
+</html>
