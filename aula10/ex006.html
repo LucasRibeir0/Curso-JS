@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div{
+            background-color:greenyellow;
+            font: normal 18pt arial;
+            width: 230px;
+            height: 230px;
+            text-align: center;
+            line-height: 208px;
+        }
+    </style>
+</head>
+<body>
+    <div id="uma-div">Exemplo com DIV</div>
+    <script>
+        var area = document.getElementById('uma-div')
+        area.addEventListener('click',clicar)
+        area.addEventListener('mouseenter',entrar)
+        area.addEventListener('mouseout',sair)
+
+        function clicar(){
+            area.innerText = 'Clicou na Div!!!'
+            area.style.backgroundColor = 'black'
+            area.style.color = 'white'
+        }
+        function entrar(){
+            area.innerText = 'Entrou na Div!!'
+            area.style.backgroundColor = 'orange'
+            area.style.color = 'white'
+        }
+        function sair(){ 
+            area.innerText = 'Saiu da Div!!'
+            area.style.backgroundColor = 'blue'
+            area.style.color = 'white'
+
+        }
+    </script>
+</body>
+</html>
+
