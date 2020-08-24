@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos produtos</title>
+</head>
+<body>
+    <h2>Verificação de produtos</h2>
+    <label for="id-num1">Código <input type="number" name="name-num1" id="id-num1" placeholder="Código do produto"></label>
+    <input type="button" value="Verificar" id="id-botão"></br>
+     <table>
+        <caption><td>Códigos no sistema</td></caption>
+         <tr><td class="linha-cont">100</td></tr>
+        <tr><td class="linha-cont">101</td></tr>
+        <tr><td class="linha-cont">102</td></tr>
+        <tr><td class="linha-cont">103</td></tr>
+        <tr><td class="linha-cont">104</td></tr>
+        <tr><td class="linha-cont">105</td></tr>
+            
+    </table>
+    
+    <div id="exibir"></div>
+   
+    <script>
+        botãop1 = document.getElementById('id-botão')
+        botãop1.addEventListener('click',verefique)
+       
+        function verefique(){
+            código01 = document.getElementById('id-num1')
+            código1 = Number(código01.value)
+            exibe = document.getElementById('exibir')
+            switch (código1){
+                case 100:
+                    exibe.innerHTML = `O cód é do <strong>cachorro quente</strong>, ele custa R$ 1,70 `
+                    break
+                case 101:
+                    exibe.innerHTML = `O cód é do <strong>Bauru simples</strong>, o valor deste produto é R$ 2,30`
+                    break
+                case 102:
+                    exibe.innerHTML = 'O cód é do <strong>Bauru com ovo</strong>, o valor deste produto é R$ 2,60'
+                    break
+                case 103:
+                    exibe.innerHTML = 'O cód é do <strong>Hamburguer</strong>, o valor deste produto é R$ 2,40 '
+                    break
+                case 104:
+                    exibe.innerHTML = 'O cód é do <strong>Cheeseburguer</strong>,o valor deste produto é R$ 2,70'
+                    break
+                case 105:
+                    exibe.innerHTML = 'O cód é do <strong>refrigerante</strong>, o valor é R$ 1,00'
+                    break
+                default:
+                    exibe.innerHTML = `<EM>CÓDIGO INVÁLIDO</EM>`
+            }
+            
+        }
+        
+        
+        
+        
+    </script>
+</body>
+</html>
