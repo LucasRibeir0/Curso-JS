@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vota ou não vota</title>
+</head>
+<body>
+    <h2>Sistema eleitoral</h2>
+    <label for="itxtnome1">Usuário <input type="text" name="ntxtnome1" id="itxtnome1" placeholder="Seu nome"></label></br>
+    <label for="itxtnome2">Idade <input type="text" name="ntxtdata1" id="itxtdata1" placeholder="Sua idade"></label>
+    <input type="button" value="Verificar" name="nveref" id="iverif">
+    <div id="res"></div>
+    <script>
+        botão = document.getElementById('iverif')
+        botão.addEventListener('click',verefique)
+        function verefique(){
+            nome01 = document.getElementById('itxtnome1')
+            idade01 = document.getElementById('itxtdata1')
+            divisão = document.getElementById('res')
+            nome1 = (nome01.value)
+            idade1 = Number(idade01.value)
+           if(idade1 <= 15){
+               divisão.innerHTML =`${nome1}, você tem ${idade1} anos, você NÃO vota!` 
+           }
+           else if(idade1 >= 16 && idade1 < 18){
+               divisão.innerHTML = `${nome1}, você tem ${idade1} anos, seu voto é <strong>OPCIONAL!</strong>`
+           }
+           else if(idade1 >= 18 && idade1 <= 70){
+               divisão.innerHTML = `${nome1}, você tem ${idade1} anos, seu <strong>voto</strong> é <strong>OBRIGATÓRIO!!!</strong>`
+           }
+           else{
+               divisão.innerHTML = `${nome1},você tem ${idade1} anos, seu voto é <strong> OPCIONAL!</strong>`
+           }
+
+    }
+         
+    </script>
+</body>
+</html>

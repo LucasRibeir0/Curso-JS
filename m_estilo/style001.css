@@ -2,8 +2,8 @@
 
 h1{
     border: groove 2px black;
-    margin-left: 38%;
-    width:18%;
+    margin-left: 30%;
+    width:28%;
     color: orange;
     font-family:cursive;
     font-size:16pt;
@@ -14,19 +14,32 @@ h1{
 h1:hover{
          background: rgba(0, 0, 0, 3);
         color: white;
+        font-size: 24pt;
+        font-family: cursive;
+        border: groove 2px white;
+
 }
 P{
     font-family: cursive;
     font-size: 14pt;
-    margin-left: 13%;
+    margin-left: 21%;
+    transition: 1s;
     
 }
-#tv{
-    margin-left: 36%;
-}
-#interface{
-            border: solid 2px black;
-            width:45%;
-            margin-left: 21%;
+p:hover{
+    color: rgb(42, 165, 52);
+    font-size: 23pt;
+    font-family: cursive;
+    margin-left: auto;
 }
 
+#interface{
+            margin-top: 2%;
+            border: solid 2px black;
+            width:75%;
+            margin-left: 19%;
+            transition: 1s;
+}
+#interface:hover{
+    background-color: black;
+}

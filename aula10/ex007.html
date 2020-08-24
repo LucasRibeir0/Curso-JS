@@ -7,22 +7,26 @@
     <link rel="stylesheet" href="../estilo/aula_10.css">
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" name="txn1" id="txn1" placeholder="N1"> +
-    <input type="number" name="txn2" id="txn2" placeholder="N2">
-    <input type="button" value="Somar" onclick="somar()"><br/>
-    <div id="res">Resultado:</div>
-    
+    <section>
+        <h1>Calculando valores</h1>
+         <input type="number" name="txtn1" class="txtnumeros" placeholder="N1"></input> +
+        <input type="number" name="txtn2" class="txtnumeros" placeholder="N2"></input>
+        <input type="button" value="Somar" name="botão" id="botão">
+        <div id="resposta">Resultado: </div>
     <script>
+        var soma = window.document.getElementById('botão')
+        soma.addEventListener('click',somar)
         function somar(){
-            var vn1 = window.document.getElementById('txn1')
-            var vn2 = window.document.getElementById('txn2')
-            var resp = window.document.getElementById('res')
-            var n1 = Number(vn1.value)
-            var n2 = Number(vn2.value)
-            var soma = n1 + n2
-            resp.innerText = `A soma entre ${n1} e ${n2} é igual a ${soma}!`
+            var transn1 = document.getElementsByClassName('txtnumeros')[0]
+            var transn2 = document.getElementsByClassName('txtnumeros')[1]
+            var n1 = Number(transn1.value)
+            var n2 = Number(transn2.value)
+            var s = n1 + n2
+            resposta.innerText = `A soma entre ${n1} + ${n2} é de ${s}`
+            
         }
-    </script>
+        window.document.body.style.background = '#cecece'
+   </script>
+    </section>
 </body>
 </html>

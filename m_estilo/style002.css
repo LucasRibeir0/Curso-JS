@@ -1,0 +1,70 @@
+@charset 'UTF-8';
+
+h1.beb{
+    font-family: cursive;
+    font-size:16pt;
+    border-bottom: groove;
+}
+
+.bebida{
+    border: 2px solid black;
+    margin-left: 3%;
+    width: 150px;
+    
+    
+}
+input#itxtn{
+    margin-bottom: 2px;
+    width: 80px;
+    
+    
+}
+input#iden_idd{
+    width: 85px;
+    
+}
+#itxtn:hover{
+    background-color: #cecece;
+}
+#iden_idd:hover{
+    background-color: #cecece;
+}
+
+/*Daqui pra baixo é estilo dos meus exercícios: ex 010*/
+
+#in1,#in2{
+    width: 50px;
+    position: relative;
+   
+    
+}
+#ib{
+    left:38%;
+    position: relative;
+    top: 12%;
+  
+}
+p, label{
+    font-family: cursive;
+    position: relative;
+    left:20%;
+    
+
+}
+h1#hierar{
+    font-family: cursive;
+    border: 1px solid;
+    width: 40%;
+    left: 26%;
+    padding-left: 12%;
+    position: relative;
+ 
+}
+#interface{
+    border: ridge;
+    left: 25%;
+    position: absolute;
+    width: 39%;
+    height: 40%;
+    
+}

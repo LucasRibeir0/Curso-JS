@@ -9,10 +9,10 @@
 <body>
     <h1>O tal do: "Olá, Mundo!!!"</h1>
     <script>
-        var n1 = Number.parseFloat(prompt('Digite um número: '))
-        var n2 = Number.parseFloat( prompt('Digite outro número: '))
+        var n1 = Number(window.prompt('Digite um número:'))//convertendo string para number
+        var n2 = Number(window.prompt('Digite outro número:'))
         var soma = n1 + n2
-        window.alert(`A soma de ${n1} e ${n2} é ${soma}`)
+        window.alert(`A soma de ${n1} + ${n2} é igual a ${soma}!`)//usando tamplate string no lugar do + de concatenação.
         /* (number + number) para adição
             (string + string) para concatenação*/
 
@@ -20,3 +20,4 @@
     </script> 
 </body>
 </html>
+ 

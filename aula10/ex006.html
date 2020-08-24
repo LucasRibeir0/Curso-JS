@@ -16,30 +16,34 @@
     </style>
 </head>
 <body>
-    <div id="uma-div">Exemplo com DIV</div>
+    <div id="uma-div">
+        Exemplo com DIV
+    </div>
+    
     <script>
-        var area = document.getElementById('uma-div')
-        area.addEventListener('click',clicar)
-        area.addEventListener('mouseenter',entrar)
-        area.addEventListener('mouseout',sair)
+        var a = document.getElementById('uma-div')
+        a.addEventListener('click',clicar) 
+        a.addEventListener('mouseenter',entrar)
+        a.addEventListener('mouseout',sair)
+        /*o "on" antes dos  eventos fez com que o código não rodasse
+         no addEventListener, diferente de quando colocamos o evento na tag html*/
 
         function clicar(){
-            area.innerText = 'Clicou na Div!!!'
-            area.style.backgroundColor = 'black'
-            area.style.color = 'white'
+            a.style.background = 'red'
+            a.innerText = 'Clicou!'
         }
         function entrar(){
-            area.innerText = 'Entrou na Div!!'
-            area.style.backgroundColor = 'orange'
-            area.style.color = 'white'
+            a.style.background = 'pink'
+            a.innerText = 'Entrou na div!'
         }
-        function sair(){ 
-            area.innerText = 'Saiu da Div!!'
-            area.style.backgroundColor = 'blue'
-            area.style.color = 'white'
-
+        function sair(){
+            a.style.background = 'Black'
+            a.innerText = 'Saiu da div!'
+            a.style.color =  'white'
         }
+        
     </script>
 </body>
 </html>
+
 

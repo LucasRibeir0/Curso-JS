@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores p1</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>
+                <h1>Números</h1>
+            </legend>
+            <label for="num-1">Número 1 <input type="number" id="num-1" placeholder="Digite um número"></input> </label></br>
+            <label for="num-2">Número 2 <input type="number" id="num-2" placeholder="Digite outro número"></label>
+        </fieldset>
+       
+    </form>
+
+    <script>
+        /*Usando operadores p1 (+ , - , * , / , **)*/
+        var n1 = Number(window.prompt('Digite um valor: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        var subt = n1 - n2
+        var mult = n1 * n2
+        var divis = n1 / n2
+        var resto = n1 % n2
+
+        
+        document.write(`A soma de ${n1} e ${n2} é ${soma}!!!</br>`)
+        document.write(`A subtração desses valores é ${subt}!!!</br>`)
+        document.write(`A multiplicação de ${n1} e ${n2} é ${mult} </br> `)
+        document.write(`O valor ${n1} dividido por ${n2} é exatamente ${divis} </br>`)
+        document.write(`O resto da divisão de ${n1} e ${n2} é ${resto}!!!`)
+        
+
+    </script>
+    
+</body>
+</html>

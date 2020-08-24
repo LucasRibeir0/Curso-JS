@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+
+h2{
+    font-family: cursive;
+    text-align: center;
+    background-color: dimgrey;
+    color:white;
+    
+}
+p{  
+    position: relative;
+    left: 40%;
+    font-family: cursive;
+    text-align: center;
+    border-bottom: groove;
+    width: 300px;
+    
+}
+#usuario-label{
+    position: relative;
+    margin-left: 27%;
+    
+    
+}
+#senha-label{
+    position: relative;
+    margin-left: 29%;
+  
+}
+#botão-label{
+    position: relative;
+    margin-left: 48%;
+}
+input{
+    margin-bottom: 1.5%;
+    margin-top: 3%;
+}
+div#conjunto{
+    position: relative;
+    left: 34%;
+    width: 30%;
+    border: 1px groove;
+    
+    
+    
+}
+div.res{
+    position: relative;
+    left: 44%;
+    font-family: cursive;
+    font-size: 14pt;
+    
+}

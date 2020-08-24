@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE MULTAS</title>
+</head>
+<body>
+    <h1>SISTEMA DE MULTAS</h1>
+   <label form="txtconteúdo">Velocidade <input type="number" name="txtnome" id="txtconteúdo" placeholder="Sua velocidade" size="5" maxlength="5"></label> 
+    <input type="button" value="Verificar" name = "vereficação1" id="verificação2">
+    <div id="resultado"></div>
+    <script>
+        var inp2 = document.getElementById('verificação2')
+        inp2.addEventListener('click',verificar)
+        function verificar(){
+            var inp1 = document.getElementById('txtconteúdo')
+            var resul = document.getElementById('resultado')
+            var veloc = Number(inp1.value)
+            resul.innerHTML = `A sua velocidade é de ${veloc} km/h </br>`
+            if(veloc > 70){
+            resul.innerHTML += `Você está MULTADO por excesso de velocidade!`
+            }
+            else{
+                resul.innerHTML += `Você está no limete permitido.`
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

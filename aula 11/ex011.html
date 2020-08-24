@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País onde mora</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    <label form ="itxtp">País <input type="text" name="ntxtp" id="itxtp" placeholder="Ex: Brasil" size="10" maxlength="30"></label>
+        <input type="button" value="Verificar" name="nver" id="iver">
+        <div id="exibir"></div>
+        <script>
+            var botãov = document.getElementById('iver')
+            botãov.addEventListener('click',verificar)
+            function verificar(){
+                var país = document.getElementById('itxtp')
+                var exib = document.getElementById('exibir')
+                var mostrar = (país.value)
+                if(mostrar.toUpperCase() == 'BRASIL'){
+                    exib.innerHTML = 'Você é BRASILEIRO!'
+                }
+                else{
+                    exib.innerHTML = 'Você é ESTRANGEIRO!'
+                } 
+                
+            }
+        </script>
+    
+</body>
+</html>

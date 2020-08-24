@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de IMC usando operadores relacionais</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome? ')
+        window.alert('Nas pergunas seguintes, use ponto e não vírgula!')
+        var peso = Number.parseFloat(window.prompt('Qual o seu peso (KG)? '))
+        var altura = Number.parseFloat(window.prompt('Qual a sua altura (m)? '))
+        var imc = peso / (altura ** 2)
+        document.write(`${nome}, seu IMC é: ${imc.toFixed(2)}</br>`) 
+        
+        
+            
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores p2</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual o seu nome? ")
+        var turma = window.prompt("Qual a sua turma? ")
+        var prova_um = Number(window.prompt("A prova 'A' valia 30, qual foi sua nota? "))
+        var prova_dois = Number(window.prompt("A prova 'B' também valia 30, qual foi sua nota? "))
+        var situação = (prova_um + prova_dois) >= 42 ? "você foi aprovado(a)!":"você ficou em recuperação!"
+        window.document.write(`${nome.toLocaleUpperCase()}, turma ${turma}, ${situação}`)
+        
+    </script>
+    
+</body>
+</html>

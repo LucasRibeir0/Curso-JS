@@ -1,0 +1,45 @@
+<!--Este exercício proposto foi retirado de um pdf da internet:
+     Curso de Graduação em Ciência da Computação
+    Disciplina: Algoritmos
+    Professor: Marcelo Cendron-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../m_estilo/style002.css">
+    <title>Maior valor</title>
+</head>
+<body>
+    <div id="interface">
+        <h1 id="hierar">Valores</h1>
+        <p>Informe dois valores.</p>
+        <label form="in1">Valor 1 <input type="number" name="nn1" id="in1" placeholder="Ex: 3"></label>
+        <label form="in2">Valor 2 <input type="number" name="nn2" id="in2" placeholder="Ex: 6"></label></br>
+        <input type="button" value="Calcular" name="nb" id="ib">
+        <p id="parag"></p>
+        <script>
+            botão = document.getElementById('ib')
+            botão.addEventListener('click',calcule)
+            function calcule(){
+                num01 = document.getElementById('in1')
+                num02 = document.getElementById('in2')
+                paragrafo = document.getElementById('parag')
+                num1 = Number(num01.value)
+                num2 = Number(num02.value)
+                if(num1 > num2){
+                    paragrafo.innerHTML = `O número <strong>${num1} é maior</strong> do que o número ${num2}!!!`
+                }
+                else if(num1 == num2){
+                    paragrafo.innerHTML = `O número ${num1} e o número ${num2} são <strong> iguais </strong>!!!`
+                }
+                else{
+                    paragrafo.innerHTML = `O valor <strong>${num2} é maior </strong> do que o valor número ${num1}`
+                }
+            }
+        
+    </script>
+    </div>
+</body>
+</html>
+

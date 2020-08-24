@@ -1,0 +1,39 @@
+<!--Este exercício proposto foi retirado de um pdf da internet:
+     Curso de Graduação em Ciência da Computação
+    Disciplina: Algoritmos
+    Professor: Marcelo Cendron-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../m_estilo/style003.css">
+    <title>Acesso</title>
+</head>
+<body>
+        <h2><hr>Acesso ao portal<hr></h2>
+        <p>Tenha um acesso rápido e seguro</p>
+        <div id="conjunto">
+            <label for="usuario-id" id="usuario-label">Usuário <input type="text" name="usuario-name" id="usuario-id" placeholder="Nome completo" maxlength="35" size="20"></label></br>
+            <label for="senha-id" id="senha-label">Senha <input type="password" name="senha-name" id="senha-id" placeholder="Sua senha"></label></br>
+            <label for="acessar-id" id="botão-label"><input type="button" value="Entrar" name="acessar-name" id="acessar-id"></label>
+        </div>   
+        <div class="res"></div>
+        <script>
+            acesso01 = document.getElementById('acessar-id')
+            acesso01.addEventListener('click',acesso_portal)
+            function acesso_portal(){
+                nome01 = document.querySelector('input#usuario-id')
+                nome = (nome01.value)
+                senha01 = document.querySelector('input#senha-id')
+                senha = Number(senha01.value)
+                na_tela = document.getElementsByClassName('res')[0]
+                if(senha == 1234){
+                    na_tela.innerHTML = '<strong>ACESSO PERMITIDO!</strong>'
+                }else{
+                    na_tela.innerHTML = '<strong>ACESSO NEGADO!<strong>'
+                }
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../m_estilo/style002.css">
+    <title>BEBIDAS</title>
+</head>
+<body>    
+        <div id="interface">
+            <h1 class="beb">BEBIDAS</h1>
+            <label form="itxtn">Nome <input type="text" name="ntxtn" id="itxtn" placeholder="Seu nome" maxlength="25" size="15"></label></br>
+            <label form="iden_idd">Idade <input type="Number" name="nam_idd" id="iden_idd" placeholder="Sua idade" size="5"></label>
+            <input type="button" value="Pesquisar" name="nbot" id="ibot">
+        <div id="res"></div>
+        
+ 
+   <script>
+       botão = document.getElementById('ibot')
+       botão.addEventListener('click',pesquisar)
+       function pesquisar(){
+             nome = document.getElementById('itxtn')
+             idade = document.getElementById('iden_idd')
+             resposta = document.getElementById('res')
+             valn = (nome.value)
+             vali = Number(idade.value)
+             if(vali >= 18){
+                resposta.innerHTML = `${valn.toUpperCase()}, bebida <strong>liberada!!</strong></br>` 
+       }
+             else{
+                resposta.innerHTML = `${valn.toUpperCase()}, você <strong>NÃO</strong> tem idade para beber!</br>`
+                
+                
+       }
+       }       
+
+   </script>
+   
+
+   </div>
+</body>
+</html>
+
+
+
