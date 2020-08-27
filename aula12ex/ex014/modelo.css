@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: dodgerblue;
+    font: normal 15pt cursive;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius:20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.287);
+    width: 80%;
+    margin:auto;
+    
+    
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color:white;
+}
+
+img#imagem{
+    position: relative;
+    left: 24%;
+    border-radius: 50%;
+
+}
+
+div[id="msg"]{
+    position: relative;
+    text-align: center;
+    
+    
+}
+
