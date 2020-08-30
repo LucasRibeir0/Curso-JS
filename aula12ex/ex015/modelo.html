@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modelo.css">
+    <title>Exercícios aula 13</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vereficação de idade</h1>
+    </header>
+    <section>
+        <div>
+            <P>Ano:
+                <input type="number" name="seu-ano" id="seu-ano" placeholder="Seu ano de nascimento">
+            </P>
+            <p>Sexo:
+                <input type="radio" name="nsexo" id="sexmas"><label for="sexmas">Masculino</label>
+                <input type="radio" name="nsexo" id="sexfem"><label for="sexfem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verefique" onclick="vereficar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados para fazer a vereficação
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Exercício p1 aula 13</p>
+    </footer>
+    <script src="modelo.js"></script>
+</body>
+
+</html>
