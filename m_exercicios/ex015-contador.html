@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="../m_estilo/tabuada.css">
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    <section>
+        <div>
+            <p> <label for="inicio">Início: </label> <input type="number" name="" id="inicio" placeholder="Digite um valor"><br>
+                <label for="passos">Passos: </label> <input type="number" name="" id="passos" placeholder="Digite um valor"><br>
+                <label for="final">Final: </label> <input type="number" name="" id="final" placeholder="Digite um valor">
+            </p>
+            <p>
+                <input type="image" src="../m_imagens/botao-tabuada.png" alt="Botão para vereficação" onclick="vereficar()">
+            </p>
+        </div>
+        <div id="conteudo"></div>
+    </section>
+    <footer>
+        <p>&copy; 2020</p>
+    </footer>
+    <script src="../m_js/contador.js"></script>
+</body>
+</html>

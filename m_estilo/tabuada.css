@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: dodgerblue;
+    font: normal 15pt cursive;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    border-radius:20px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.287);
+    width: 52%;
+    margin:auto;
+    
+    
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    color:white;
+}
+
+fieldset{
+    border-radius: 12px;
+    background: url(../m_imagens/select-tabuada.png)no-repeat right;  
+    
+}
+
+fieldset legend{
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px #00BFFF;
+}
+fieldset select{
+    left: 2%;
+    position: relative;
+    border-radius: 25px solid; 
+    padding: 2%;
+    width: 25%;
+    height: 15%;
+    
+}
+p input#botao{
+    position: absolute;
+    top:19%;
+    left: 47%;
+}

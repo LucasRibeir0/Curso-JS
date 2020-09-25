@@ -1,3 +1,4 @@
+
 function vereficar() {
     var nasc1 = new Date().getFullYear()
     var inpano = document.getElementById('seu-ano')
@@ -44,9 +45,11 @@ function vereficar() {
         res.style.textAlign = 'center'
         res.innerHTML = `${gênero} de ${idade} anos!`
         res.appendChild(img)
+        
 
     }
 
+    
 }
 
 

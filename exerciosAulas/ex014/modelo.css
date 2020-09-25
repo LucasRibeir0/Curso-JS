@@ -26,17 +26,13 @@ footer{
     color:white;
 }
 
-img#imagem{
-    position: relative;
-    left: 24%;
+img#imagem{ 
     border-radius: 50%;
 
 }
-
-div[id="msg"]{
-    position: relative;
-    text-align: center;
     
+div{
+    text-align: center;
     
 }
 
